@@ -1,0 +1,9 @@
+*.log
+*.pid
+*deploymentkit-*/
+*-deploymentkit*/
+*.pyc
+*~
+passwords.py
+*.sqlite*
+public_html/tarballs
