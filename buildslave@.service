@@ -1,0 +1,11 @@
+[Unit]
+Description=Buildbot slave: %i
+
+[Service]
+User=%i
+Type=forking
+ExecStart=/usr/bin/buildslave start /home/%i/buildslave
+PIDFile=/home/%i/buildslave/twistd.pid
+
+[Install]
+WantedBy=multi-user.target
